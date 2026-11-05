@@ -1,0 +1,38 @@
+{
+  "filas": {
+    "Visitantes": 3946,
+    "Observados": 1470,
+    "Predicciones": 1323,
+    "Metricas": 21,
+    "Calendario": 210,
+    "Series": 7,
+    "Modelos": 3
+  },
+  "prueba_1_total_terrestre_ene_jun_2025": 1043269.4488721137,
+  "prueba_1_meses": {
+    "2025-01": 188419.59825538553,
+    "2025-02": 161725.88643334268,
+    "2025-03": 171294.25098417036,
+    "2025-04": 206821.69107359942,
+    "2025-05": 160228.92597209418,
+    "2025-06": 154779.0961535216
+  },
+  "modelos_total_visitantes": [
+    {
+      "Modelo": "ARIMA/SARIMA",
+      "MAE": 180016.67582111698,
+      "RMSE": 199364.26715971855
+    },
+    {
+      "Modelo": "Suavizamiento exponencial",
+      "MAE": 165372.6258489368,
+      "RMSE": 180598.32147900484
+    },
+    {
+      "Modelo": "Holt-Winters",
+      "MAE": 178240.18468032355,
+      "RMSE": 191179.98723462745
+    }
+  ],
+  "estado": "Fuentes preparadas y verificadas en Python; importación e interacción en Power BI pendientes de verificar."
+}
