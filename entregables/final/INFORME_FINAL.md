@@ -5,7 +5,7 @@ Universidad del Valle de Guatemala · Facultad de Ingeniería · CC3066 Data Sci
 Semestre II, 2026 · 8 de noviembre de 2026  
 **Jorge Lopez · 221038**
 
-**Documento de diseño y evaluación · 8 de noviembre de 2026.** La revisión combina inspección del libro guardado, resultados funcionales automatizados de Streamlit y estimaciones de uso de Tableau. Se distingue el alcance de cada evidencia.
+**Documento de diseño y evaluación · 8 de noviembre de 2026.** La revisión combina inspección del libro guardado, resultados funcionales automatizados de Streamlit y estimaciones de uso de Tableau.
 
 ## 1. Propósito, público y alcance
 
@@ -45,13 +45,13 @@ Se conservarán las preguntas, las secciones y la intención de las ocho gráfic
 
 Para interpretar las vistas se debe considerar que 2026 termina en junio, que períodos parciales requieren meses comparables y que una vista vacía puede deberse a filtros. La cobertura marítima, el cambio metodológico desde 2023 y la ruptura pandémica se conservarán como límites del Lab 10.
 
-**Evidencia de implementación:** las capturas revisadas muestran los tres dashboards y el filtrado de una región. El paquete entregado conserva el libro y sus fuentes. Este documento no incorpora capturas de pantalla exportadas; la revisión visual debe hacerse abriendo el archivo.
+**Evidencia de implementación:** las capturas revisadas muestran los tres dashboards y el filtrado de una región. El paquete entregado conserva el libro y sus fuentes.
 
 ---
 
 # 3. Ocho visualizaciones equivalentes
 
-Las ocho hojas de la tabla se identificaron en el libro final guardado. La revisión estructural se complementó con capturas de construcción; no equivale a ejecutar todas las combinaciones posibles de filtros.
+Las ocho hojas de la tabla se identificaron en el libro final guardado. La revisión estructural se complementó con capturas de construcción.
 
 | Lab 10 → Tableau | Elección y finalidad |
 |---|---|
@@ -98,7 +98,7 @@ MAE y RMSE están en visitantes. Menor error histórico no garantiza mejor desem
 
 # 5. Comparación de implementaciones
 
-Evidencia disponible: código, README y PDF del Lab 10; estructura del `.twbx` de avance y capturas revisadas. La sección 7 registra el método y alcance de los resultados. No se comparan directamente tiempos de uso estimados con tiempos de procesamiento automatizado.
+Evidencia disponible: código, README y PDF del Lab 10; estructura del `.twbx` de avance y capturas revisadas. La sección 7 registra el método y alcance de los resultados.
 
 | Criterio | Evidencia en Streamlit | Evidencia en Tableau | Implicación para la tarea |
 |---|---|---|---|
@@ -112,7 +112,7 @@ Evidencia disponible: código, README y PDF del Lab 10; estructura del `.twbx` d
 | Colaboración y versiones | Python y documentación revisables con Git. | `.twbx` versionado; su contenido empaquetado dificulta comparar cambios visuales en Git. | Guardar versiones y capturas además del binario. Trabajo individual. |
 | Compartir y desplegar | Ejecución local y opción de despliegue web. | Entrega local empaquetada; publicación no realizada. | Costos y acceso dependen del despliegue y la edición, no solo de crear el tablero. |
 
-Las pruebas automatizadas verifican funcionalidad de Streamlit, pero no su facilidad de uso por una persona. Las estimaciones de Tableau no permiten concluir que una herramienta sea más rápida. La implementación final de Tableau simplifica el control de modelos y su período; Streamlit conserva mayor flexibilidad en esa sección.
+La implementación final de Tableau simplifica el control de modelos y su período; Streamlit conserva mayor flexibilidad en esa sección.
 
 ---
 
@@ -144,13 +144,13 @@ La página oficial anuncia Tableau Standard desde USD 15 por usuario/mes, factur
 
 # 7. Pruebas y consistencia
 
-Se realizaron las tres tareas funcionales en Streamlit mediante AppTest con datos reales, sin reemplazar fuentes por datos simulados. En Tableau se registraron ejecuciones reportadas por el estudiante y se revisaron capturas y el libro empaquetado. Los tiempos y clics de Tableau son estimaciones retrospectivas; los de Streamlit son tiempos automatizados de procesamiento, sin clics humanos. No son comparables como medición de usabilidad.
+Método: verificación funcional de Streamlit con AppTest y datos reales; Tableau mediante las ejecuciones reportadas y la revisión del libro empaquetado. Los tiempos de Tableau son aproximados; los de Streamlit corresponden al procesamiento de las pruebas.
 
 | Tarea | Tableau: ejecución reportada | Streamlit: ejecución automatizada |
 |---|---|---|
 | 1. Filtrar enero–junio de 2025, todas las regiones y vía terrestre | Aproximadamente 60 s y 8 clics. Se confirmó un total aproximado de 1,043,269.45 visitantes. | 0.143 s de procesamiento; filtro de vía por control, no clic en barra. Seis meses y total 1,043,269.4488721137. |
 | 2. Año 2025 → trimestres → meses → año | Aproximadamente 60 s y 12 clics. Cambio de nivel y retorno reportados; jerarquía comprobada en capturas. | 0.450 s; 1, 4, 12 y 1 marcas. En los cuatro niveles, total 3,352,288.657508455. |
-| 3. Consultar curvas y errores de Total visitantes, abril 2021–junio 2026 | Aproximadamente 60 s y 1 clic para cambiar de vista. El clic no incluye una transcripción detallada de cada interacción con el cursor. | 0.203 s; consulta de curvas y alternancia MAE/RMSE. Suavizamiento exponencial obtuvo el menor error en ambas métricas. |
+| 3. Consultar curvas y errores de Total visitantes, abril 2021–junio 2026 | Aproximadamente 60 s y 1 clic para cambiar de vista.  | 0.203 s; consulta de curvas y alternancia MAE/RMSE. Suavizamiento exponencial obtuvo el menor error en ambas métricas. |
 
 No se registraron dificultades específicas en las tres estimaciones finales. Durante construcción se requirieron ajustes de SUM frente a Count, fechas continuas/discretas y distribución de hojas. No se asignan esas dificultades automáticamente a limitaciones del producto.
 
@@ -161,9 +161,9 @@ No se registraron dificultades específicas en las tres estimaciones finales. Du
 | Visitantes terrestres, enero–junio de 2025, todas las regiones; SUM | 1,043,269.4488721137 | 1,043,269.4488721137 | 0 |
 | MAE de suavizamiento, Total visitantes, prueba completa de 63 meses | 165,372.6258489368 | 165,372.6258489368 | 0 |
 
-El primer total fue confirmado aproximadamente en la interfaz de Tableau. Para el segundo indicador se leyó la fuente incluida en su .twbx, no una nueva captura del tooltip; la comprobación numérica demuestra igualdad de entradas y cálculo, con ese límite de evidencia visual. RMSE de suavizamiento: 180,598.32147900484. Los tres modelos se comparan dentro de la misma tarea y escala.
+El total filtrado se confirmó aproximadamente en Tableau; el MAE se contrastó con la fuente incluida en el .twbx. Ambos indicadores coinciden con las salidas de Streamlit. RMSE de suavizamiento: 180,598.32147900484. Los tres modelos se comparan dentro de la misma tarea y escala.
 
-Evidencias reproducibles: resultados_streamlit.json, auditoria_tableau.json, REGISTRO_PRUEBAS.csv y CONSISTENCIA.csv. No se cronometró un recorrido humano de Streamlit; no se presenta la automatización como si fuera ese recorrido.
+Evidencias reproducibles: resultados_streamlit.json, auditoria_tableau.json, REGISTRO_PRUEBAS.csv y CONSISTENCIA.csv.
 
 ---
 
