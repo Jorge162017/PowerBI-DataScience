@@ -163,7 +163,7 @@ No se registraron dificultades específicas en las tres estimaciones finales. Du
 
 El primer total fue confirmado aproximadamente en la interfaz de Tableau. Para el segundo indicador se leyó la fuente incluida en su .twbx, no una nueva captura del tooltip; la comprobación numérica demuestra igualdad de entradas y cálculo, con ese límite de evidencia visual. RMSE de suavizamiento: 180,598.32147900484. Los tres modelos se comparan dentro de la misma tarea y escala.
 
-Evidencias reproducibles: resultados_streamlit.json, salidas Plotly JSON, auditoria_tableau.json, REGISTRO_PRUEBAS.csv y CONSISTENCIA.csv. No se cronometró un recorrido humano de Streamlit; no se presenta la automatización como si fuera ese recorrido.
+Evidencias reproducibles: resultados_streamlit.json, auditoria_tableau.json, REGISTRO_PRUEBAS.csv y CONSISTENCIA.csv. No se cronometró un recorrido humano de Streamlit; no se presenta la automatización como si fuera ese recorrido.
 
 ---
 
@@ -171,7 +171,7 @@ Evidencias reproducibles: resultados_streamlit.json, salidas Plotly JSON, audito
 
 Responsable único: **Jorge Lopez, 221038**. El avance planificó completar visualizaciones el 6 de noviembre, modelos y pruebas el 7, y revisión y entrega el 8. Esas eran metas: no deben presentarse como fechas reales de terminación sin registro. Al 8 de noviembre el archivo final contiene ocho hojas y tres dashboards; las verificaciones funcionales y numéricas se describen en la sección 7. No se midieron horas efectivas de desarrollo.
 
-No se registró tiempo efectivo total de construcción en ninguna herramienta. REGISTRO_ENTORNO_Y_TIEMPOS.csv conserva esa limitación. Los tiempos de tres tareas no representan horas de desarrollo. Git y las versiones documentan cambios, pero no prueban horas efectivas ni el aporte de personas distintas en un trabajo individual.
+No se registró tiempo efectivo total de construcción en ninguna herramienta. El entorno utilizado se registra en entorno_verificacion.txt. Los tiempos de tres tareas no representan horas de desarrollo. Git y las versiones documentan cambios, pero no prueban horas efectivas ni el aporte de personas distintas en un trabajo individual.
 
 ## Archivos e instrucciones
 
@@ -190,6 +190,5 @@ El usuario debe guardar el libro terminado como `.twbx`, incluir los Excel utili
 - **S5.** Tableau, precios y planes: https://www.tableau.com/pricing
 - **S6.** Acciones de filtro: https://help.tableau.com/current/pro/desktop/en-us/actions_filter.htm
 - **S7.** Porcentaje de total: https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations_definebasic_runningtotal.htm
-- **S8.** Parámetros para medidas: https://help.tableau.com/current/pro/desktop/en-us/parameters_swap.htm
 
-S6–S8 sustentan las opciones de interacción y cálculos. La presencia de cada característica en el producto no sustituye la evidencia del libro; el comportamiento guardado y sus límites se describen en este documento. Fuentes del proyecto: README, código, documento de diseño y CSV del Lab 10; enunciado del Lab 12; `.twbx` de avance. Consulta: 8 de noviembre de 2026.
+Fuentes del proyecto: código, documento de diseño y CSV del Laboratorio 10; enunciado del Laboratorio 12 y libro final de Tableau. Fecha de consulta: 8 de noviembre de 2026.

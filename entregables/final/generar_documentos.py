@@ -42,5 +42,4 @@ def render(source, output):
     print(output,len(result),'páginas')
 
 if __name__=='__main__':
-    render('INFORME_FINAL_BORRADOR.md','Lab12_Informe_Final_BORRADOR_221038.pdf')
-    render('TU_PARTE_TABLEAU.md','Guia_Tableau_221038.pdf')
+    render('INFORME_FINAL.md','Lab12_Informe_Final_Jorge_Lopez_221038.pdf')
