@@ -1,0 +1,38 @@
+{
+  "procedencia": "Valores de control calculados desde los archivos del Lab 10, no mediciones de uso de Tableau o Streamlit.",
+  "filas_curvas": 1764,
+  "filas_evaluacion": 1323,
+  "visitantes_2025": 3352288.657508455,
+  "trimestres_2025": {
+    "1": 822510.7356728986,
+    "2": 802459.7131992151,
+    "3": 795238.7344002379,
+    "4": 932079.4742361039
+  },
+  "terrestre_ene_jun_2025": 1043269.4488721138,
+  "metricas_total_visitantes": [
+    {
+      "Serie": "Total visitantes",
+      "Modelo": "ARIMA/SARIMA",
+      "MAE": 180016.675821117,
+      "Meses": 63,
+      "RMSE": 199364.26715971855
+    },
+    {
+      "Serie": "Total visitantes",
+      "Modelo": "Holt-Winters",
+      "MAE": 178240.18468032347,
+      "Meses": 63,
+      "RMSE": 191179.98723462745
+    },
+    {
+      "Serie": "Total visitantes",
+      "Modelo": "Suavizamiento exponencial",
+      "MAE": 165372.62584893676,
+      "Meses": 63,
+      "RMSE": 180598.32147900484
+    }
+  ],
+  "max_diferencia_mae": 8.731149137020111e-11,
+  "max_diferencia_rmse": 2.9103830456733704e-11
+}

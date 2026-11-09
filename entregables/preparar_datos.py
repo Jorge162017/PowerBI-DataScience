@@ -50,7 +50,7 @@ check = {
     'prueba_1_total_terrestre_ene_jun_2025':float(vis.loc[mask,'Visitantes'].sum()),
     'prueba_1_meses':{d.strftime('%Y-%m'):float(v) for d,v in vis.loc[mask].groupby('Fecha').Visitantes.sum().items()},
     'modelos_total_visitantes':tables['Metricas'].loc[tables['Metricas'].Serie.eq('Total visitantes'),['Modelo','MAE','RMSE']].to_dict('records'),
-    'estado':'Fuentes preparadas y verificadas en Python; importación e interacción en Power BI pendientes de verificar.'
+    'estado':'Controles de fuentes calculados en Python. El avance de Tableau tiene cuatro fuentes conectadas y dos gráficas enlazadas; la implementación final se verifica por separado.'
 }
 (out/'verificacion_datos.json').write_text(json.dumps(check,ensure_ascii=False,indent=2))
 print(json.dumps(check,ensure_ascii=False,indent=2))

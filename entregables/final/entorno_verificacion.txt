@@ -1,0 +1,11 @@
+Entorno instalado para revisión automatizada: 8 de noviembre de 2026
+No prueba que este fuera el entorno original del Lab 10.
+
+Python 3.13.12
+macOS 26.2
+Arquitectura arm64
+streamlit==1.67.0
+plotly==6.9.0
+pandas==2.3.3
+numpy==2.5.4
+openpyxl==3.1.5

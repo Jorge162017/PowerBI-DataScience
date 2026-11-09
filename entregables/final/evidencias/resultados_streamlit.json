@@ -1,0 +1,60 @@
+{
+  "carga_inicial_segundos": 11.583137416997488,
+  "nota": "Tiempos automatizados; no comparables con estimaciones humanas de Tableau. No se midieron clics humanos.",
+  "pruebas": [
+    {
+      "prueba": 1,
+      "metodo": "AppTest con filtro de vía; no selección de barra por ratón",
+      "segundos_automatizados": 0.14325154199832468,
+      "total": 1043269.4488721137,
+      "meses": 6,
+      "resultado": "Correcto"
+    },
+    {
+      "prueba": 2,
+      "metodo": "AppTest; cambios de control sin ratón",
+      "segundos_automatizados": 0.44992366600126843,
+      "niveles": [
+        {
+          "nivel": "Año",
+          "marcas": 1,
+          "total": 3352288.657508455
+        },
+        {
+          "nivel": "Trimestre",
+          "marcas": 4,
+          "total": 3352288.657508455
+        },
+        {
+          "nivel": "Mes",
+          "marcas": 12,
+          "total": 3352288.657508455
+        },
+        {
+          "nivel": "Año",
+          "marcas": 1,
+          "total": 3352288.657508455
+        }
+      ],
+      "resultado": "Correcto"
+    },
+    {
+      "prueba": 3,
+      "metodo": "AppTest; navegación y selección de métrica sin ratón",
+      "segundos_automatizados": 0.2025572499987902,
+      "metricas": {
+        "MAE": {
+          "Suavizamiento exponencial": 165372.6258489368,
+          "Holt-Winters": 178240.18468032355,
+          "ARIMA/SARIMA": 180016.67582111698
+        },
+        "RMSE": {
+          "Suavizamiento exponencial": 180598.32147900484,
+          "Holt-Winters": 191179.98723462745,
+          "ARIMA/SARIMA": 199364.26715971855
+        }
+      },
+      "resultado": "Correcto"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "archivo": "Lab12_Final_Jorge_Lopez_221038.twbx",
+  "version": "2026.3.0 (20263.26.1022.1645)",
+  "hojas": [
+    "Composicion region-via",
+    "Error de modelos",
+    "Estacionalidad",
+    "Evolucion Mensual",
+    "Evolucion por region",
+    "Mercados de origen",
+    "Observado y predicho",
+    "Visitantes por vía"
+  ],
+  "dashboards": [
+    "Mercados y vias",
+    "Modelos y limites",
+    "Panorama"
+  ],
+  "acciones": [
+    "<action caption=\"Filter 1 (generated)\" name=\"[Action1_7207DB2728A845D2B7CDF2F44F7BCA22]\">\n      <activation auto-clear=\"true\" type=\"on-select\" />\n      <source dashboard=\"Panorama\" type=\"sheet\" worksheet=\"Visitantes por vía\" />\n      <command command=\"tsc:tsl-filter\">\n        <param name=\"special-fields\" value=\"all\" />\n        <param name=\"target\" value=\"Panorama\" />\n      </command>\n    </action>\n    ",
+    "<action caption=\"Filter 2 (generated)\" name=\"[Action2_D19DED9297AF4DF78265CD09ABF0FC44]\">\n      <activation auto-clear=\"true\" type=\"on-select\" />\n      <source dashboard=\"Mercados y vias\" type=\"sheet\" worksheet=\"Mercados de origen\" />\n      <command command=\"tsc:tsl-filter\">\n        <param name=\"special-fields\" value=\"all\" />\n        <param name=\"target\" value=\"Mercados y vias\" />\n      </command>\n    </action>\n  "
+  ],
+  "fuentes": [
+    "Predicciones (Datos_Lab12)",
+    "Observados (Datos_Lab12)",
+    "Visitantes (Datos_Lab12)",
+    "Curvas (Modelos_Tableau)",
+    "Metricas (Datos_Lab12)"
+  ],
+  "paquete": [
+    "Lab12_Final_Jorge_Lopez_221038.twb",
+    "Data/PowerBI_Avance/Datos_Lab12.xlsx",
+    "Data/datos/Modelos_Tableau.xlsx"
+  ],
+  "total_filtrado_fuente_empaquetada": 1043269.4488721138,
+  "mae_suavizamiento_fuente_empaquetada": 165372.6258489368,
+  "limites": "Inspección estructural y numérica; no ejecución interactiva de Tableau. No se identificó tarjeta visible de filtro Fecha en los dashboards de la versión guardada revisada."
+}

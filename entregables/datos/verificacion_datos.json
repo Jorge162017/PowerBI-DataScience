@@ -34,5 +34,5 @@
       "RMSE": 191179.98723462745
     }
   ],
-  "estado": "Fuentes preparadas y verificadas en Python; importación e interacción en Power BI pendientes de verificar."
+  "estado": "Controles de fuentes calculados en Python. El avance de Tableau tiene cuatro fuentes conectadas y dos gráficas enlazadas; la implementación final se verifica por separado."
 }
